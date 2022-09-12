@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500, 700" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Fashion Driven</title>
+</head>
+<body>
+    <div class="menu-superior">
+        <img class="logo" src="imagens/Logo.png">
+    </div>
+    <div class="corpo">
+        <div class="lado-esquerdo">
+            <div class="opçoes">
+                <div class="tipo">
+                    <h1>Escolha o modelo:</h1>
+                </div>
+                <div class="escolhas">
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="T-shirt" onclick="selecionarModelo(this)"><img class="imagem-opçao" src="imagens/tshirt.png"></div>
+                        <p>T-shirt</p>
+                    </div>    
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="top-tank" onclick="selecionarModelo(this)"><img class="imagem-opçao" src="imagens/Camiseta.png"></div>
+                        <p>Camiseta</p>
+                    </div>
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="long" onclick="selecionarModelo(this)"><img class="imagem-opçao" src="imagens/Mangalonga.png"></div>
+                        <p>Manga longa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opçoes">
+                <div class="tipo">
+                    <h1>Escolha a gola:</h1>
+                </div>
+                <div class="escolhas">
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="v-neck" onclick="selecionarGola(this)"><img class="imagem-opçao" src="imagens/GolaV.png"></div>
+                        <p>Gola V</p>
+                    </div>    
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="round" onclick="selecionarGola(this)"><img class="imagem-opçao" src="imagens/GolaRedonda.png"></div>
+                        <p>Gola redonda</p>
+                    </div>
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="polo" onclick="selecionarGola(this)"><img class="imagem-opçao" src="imagens/GolaPolo.png"></div>
+                        <p>Gola polo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opçoes">
+                <div class="tipo">
+                    <h1>Escolha o tecido:</h1>
+                </div>
+                <div class="escolhas">
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="silk" onclick="selecionarTecido(this)"><img class="imagem-opçao" src="imagens/Seda.png"></div>
+                        <p>Seda</p>
+                    </div>    
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="cotton" onclick="selecionarTecido(this)"><img class="imagem-opçao" src="imagens/Algodão.png"></div>
+                        <p>Algodão</p>
+                    </div>
+                    <div class="caixa-opçao">
+                        <div class="opçao" id="polyester" onclick="selecionarTecido(this)"><img class="imagem-opçao" src="imagens/Poliester.png"></div>
+                        <p>Poliéster</p>
+                    </div>
+                </div>
+            </div>
+            <div class="opçoes">
+                <h1>Imagem de referência:</h1>
+                <input type="text" placeholder="Insira aqui o link">
+                <div class="pedido">Confirmar pedido</div>
+                <div class="pedido-pronto escondido" onclick="finalizarPedido()">Confirmar pedido</div>
+            </div>
+        </div>
+        <div class="lado-direito">
+            <img src="imagens/ilustração.png">
+        </div>
+    </div>
+    <div class="menu-inferior">
+        <div class="frase">
+            <h2>Ultimos pedidos</h2>
+        </div>
+        <ul class="container-de-pedidos">
+
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
