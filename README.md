@@ -1,6 +1,6 @@
 ## Description
 
-O "Social Postify" é um aplicativo web que permite aos usuários de escolher rapidamente combinaçao de peças de roupas. 
+O "Fashion Driven" é um aplicativo web que permite aos usuários de escolher rapidamente combinaçao de peças de roupas. 
 
 
 ## Installation
